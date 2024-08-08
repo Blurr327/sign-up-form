@@ -23,6 +23,62 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime optio ducimus dolorem accusantium eius numquam animi ullam aperiam, quisquam cum repellat suscipit eos nam quam? Dicta omnis quidem laboriosam neque.</div>
+    <div class="side-section">
+        <div class="logo">Mohamed</div>
+    </div>
+    <h2>This is a nice demo of a sign up form.</h2>
+    <form action="">
+        <p>
+            Required fields are followed by <strong><span aria-label="required">*</span></strong>
+        </p>
+        <section>
+            <h2>Personal Information</h2>
+            <p>
+                <label for="first-name">
+                    <span>First Name :</span>
+                </label>
+                <input type="text" id="first-name" name="first-name">
+            </p>
+            <p>
+                <label for="last-name">
+                    <span>Last Name : </span>
+                    <span aria-label="required">*</span>
+                </label>
+                <input type="text" id="last-name" name="last-name" required>
+            </p>
+            <p>
+                <label for="email">
+                    <span>Email :</span>
+                    <span aria-label="required">*</span>
+                </label>
+                <input type="email" name="email" required>
+            </p>
+            <p>
+                <label for="phone-number">
+                    <span>Phone Number :</span>
+                    <span aria-label="required">*</span>
+                </label>
+                <input type="tel" name="phone-number">
+            </p>
+            <p>
+                <label for="password">
+                    <span>Password : </span>
+                    <span aria-label="required">*</span>
+                </label>
+                <input type="password" name="password" required>
+            </p>
+            <p>
+                <label for="confirm-password">
+                    <span>Confirm Password : </span>
+                    <span aria-label="required">*</span>
+                </label>
+                <input type="confirm-password" name="confirm-password" required>
+            </p>
+        </section>
+        <section>
+            <button type="submit">Create Account</button>
+            <span>Already have an account ? <a href="dunno">Log in</a></span>
+        </section>
+    </form>
 </body>
 </html>

@@ -1,0 +1,115 @@
+body {
+    display:flex;
+    height:100vh;
+}
+
+body *::selection {
+    background-color:lightblue;
+}
+
+.side-section,
+form {
+    flex:1;
+}
+
+form {
+    flex-basis:25%;
+}
+
+.side-section {
+    display:flex;
+    align-items: center;
+    background-image: url("../assets/images/bg.jpg");
+    overflow:hidden;
+
+}
+
+.logo {
+    flex:1;
+    font-size:clamp(1.6rem,2.4rem + 1vw,3.6rem);
+    font-weight:bold;
+    color:white;
+    background-color: rgb(245,245,220,0.5);
+    padding:clamp(1.6rem,2.4rem + 1vw,3.6rem);
+    text-align: center;
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+
+    background-color: rgb(1,84,130);
+    color:white;
+}
+
+.header-text
+, .submit {
+    margin: 2rem;
+}
+
+form > .control-section {
+    background-color: white;
+    color:black;
+    padding:2.4rem;
+}
+
+.controls {
+    display:flex;
+    flex-wrap:wrap;
+    width:50%;
+}
+
+.controls > p{
+    flex-basis:50%;
+}
+
+.controls > p > label {
+    font-size:.85rem;
+    font-weight:50;
+}
+
+.controls > p > input {
+    display:block;
+    border: .1rem solid;
+    border-radius:.35rem;
+    border-color:#ddd;
+    min-height:1.4rem;
+}
+
+.controls > p > input:focus,
+.valid,
+.invalid {
+    box-shadow: .3rem .3rem .4rem #ddd;
+}
+
+.focusable:focus {
+    outline:.1rem solid blue;
+}
+
+.valid {
+    outline:.1rem solid green;
+}
+
+.invalid {
+    outline:.1rem solid red;
+}
+
+.submit button {
+    width:10rem;
+    border:0;
+    border-radius: .4rem;
+    height:2.4rem;
+    color:rgb(1,84,130);
+    background-color: lightblue;
+}
+
+.submit a {
+    font-weight:bold;
+    color: lightblue;
+}
+
+.error {
+    color: red;
+    font-size:.7rem;
+}
